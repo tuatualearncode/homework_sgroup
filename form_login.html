@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d9709a4397.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+    <link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet">
+
+<style>
+  html{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+    body {
+        display: flex;
+        justify-content: center;
+    }
+    #body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+        height: 500px;
+        background-color: black;
+        border-radius: 30px;
+    }
+
+   h1 {
+    display: flex;
+    font-weight: bold;
+    color: white ;
+   }
+    i.fa-brands{
+      color: green;
+      margin-right: 10px;
+    }
+
+   #username{
+    margin-top: 50px;
+   }
+  label{
+    color: white;
+    font-weight: bold;
+  }
+  input{
+    border-radius: 20px;
+    border: 0.2px solid;
+    height: 35px;
+    width: 250px;
+  }
+  .error_username{
+    font-size: 10px;
+    margin-bottom: 25px;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .error_password{
+    font-size: 10px;
+    margin-bottom: 25px;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+  
+  }
+
+  i.fa-solid{
+    margin-right: 10px;
+  }
+  #login{
+    width: 100px;
+    height: 35px;
+    margin-top: 30px;
+    border-radius: 20px;
+    border : 1px;
+    background-color: green;
+    font-weight: bold;
+    font-size: 17px;
+    transition: all 0.5s linear;
+  }
+  #login:hover{
+    background-color: brown;
+  }
+</style>
+
+</head>
+<body>
+    <div id="body">
+    <h1>
+      <i class="fa-brands fa-spotify"></i>
+        Spotify
+    </h1>
+
+    <p style="color: red; font-weight : bold;"> Welcome to spotify !</p>
+
+    <div id="username">
+            <label for="inp1">Username</label>
+            <input id="inp1" type="text" placeholder="mail@adress.com" pattern="^(?=.*[a-zA-Z])(?=.*\S)(?=.*\d).*[A-Za-z\d]$" required>
+    </div>
+
+    <div class="error_username">
+      <i class="fa-solid fa-triangle-exclamation" style="color: red;"></i>
+      <p>Tên đăng nhập phải có chữ & số,<br> không chứa dấu cách</p>
+      </div>
+     <div id="password">
+            <label for="inp2">Password</label>
+            <input id="inp2" type="password" placeholder="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&^-_=+.;>]).*[A-Za-z\d@$!%*?&^-_=+.;>]{8,}$" required>
+      </div>
+     
+      <div class="error_password">
+        <i class="fa-solid fa-triangle-exclamation" style="color: red;"></i>
+        <p>Mật khẩu phải gồm chữ in hoa, thường, <br> số & kí tự đặc biệt</p>
+      </div>
+        <button id="login">Login</button>
+    </div>
+</body>
+
+<script src="form_login.js"></script>
+
+</html>
