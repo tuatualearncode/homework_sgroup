@@ -65,6 +65,7 @@ data.then(function(res) {
             <div id="banner">
             <img id="img" src="${item.image}" alt="">
             <button class="public_button">Published</button>
+            <button class="id_banner">${item.id}</button>
         </div>
 
 
