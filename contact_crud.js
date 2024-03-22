@@ -39,7 +39,7 @@ function addContact() {
     renderContacts();
     closeModal();
   } else {
-    alert("Please fill in all fields.");
+    alert("Vui long dien du thong tin");
   }
 }
 
