@@ -12,6 +12,7 @@ function renderContacts() {
       <p>Name: ${contact.name}</p>
       <p>Email: ${contact.email}</p>
       <p>Phone: ${contact.phone}</p>
+      <p>Kare_phone : ${contact.phoneKare}</p>
       <div class="actions">
         <button onclick="editContact(${index})">Edit</button>
         <button onclick="deleteContact(${index})">Delete</button>
@@ -25,9 +26,10 @@ function addContact() {
   const name = document.getElementById("name").value.trim();
   const email = document.getElementById("email").value.trim();
   const phone = document.getElementById("phone").value.trim();
+  const phoneKare = document.getElementById("phoneKare").value.trim();
 
-  if (name && email && phone) {
-    const contact = { name, email, phone };
+  if (name && email && phone && phoneKare) {
+    const contact = { name, email, phone, phoneKare };
     if (editIndex === -1) {
       contacts.push(contact);
     } else {
@@ -46,6 +48,8 @@ function editContact(index) {
   document.getElementById("name").value = contact.name;
   document.getElementById("email").value = contact.email;
   document.getElementById("phone").value = contact.phone;
+  document.getElementById("phoneKare").value = contact.phoneKare;
+
   editIndex = index;
   openModal();
 }
