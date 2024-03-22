@@ -1,0 +1,144 @@
+<!DOCTYPE html>                   <_casc phan cua mot ban html, cac buoc day code len git>
+    <html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>viblo</title>
+    </head>
+    <h1>A Completed Guide to Flexbox in CSS (Phần 1)</h1>
+    
+    <span style="font-size: 20px">Hôm nay mình sẽ giới thiệu với các bạn những tính năng cần 
+        biết trong Flexbox của CSS. Vì Flexbox có khá nhiều tính năng 
+        hay ho nên mình sẽ tách ra ít nhất là 2 phần để có thể giới 
+        thiệu một cách đầy đủ !</span>
+     
+    
+    <h2>I,Một vài thuật ngữ</h2>
+    <span style="font-size: 20px">Bởi vì Flexbox là cả một module trong CSS chứ không phải chỉ là một thuộc tính,
+        do đó nó có chứa hàng tá các thuật ngữ riêng, ta hãy tìm hiểu qua một chút trước
+        khi đi vào các tính năng của Flexbox nhé.</span>
+    
+    <span style="font-size: 20px">Nếu như với layout bình thường của CSS, việc hiển thị của các elements sẽ được 
+    dựa trên block và inline flow directions, thì trong flex layout chúng ta sử dụng
+    "flex-flow directions". Các bạn hãy quan sát ảnh dưới:</span> <br>
+    
+    <img src="./ảnh 1.webp" height="400" width="800"></span>
+    <br><br>
+    
+    <span style="font-size: 21px">Nào hãy cùng giải thích từng khái niệm nhé</span>
+    <ul>
+        <li> <h3>Flex container:</h3> <span style="font-size: 21px">Là một element được cài đặt thuộc tính 
+            display: flex /* hoặc inline-flex */. Đây sẽ là môi 
+            trường chứa các phần tử khác cần được hiển thị theo Flexbox.</span>
+        </li>
+        <li>
+            <h3>Flex item:</h3> <span style="font-size: 21px">Các phần tử con của container được gọi là item, 
+                ở item bạn có thể thiết lập nó sẽ sử dụng bao nhiêu cột trong
+                một container, hoặc thiết lập thứ tự hiển thị của nó.</span>
+        </li>
+    </ul>
+    <br>
+    <br>
+    
+    <span style="font-size: 21px">Đó là hai khái niệm chính, bây giờ chúng ta sẽ xem qua một vài khái niệm khác nhé:</span>
+    
+    
+    <ul>
+        <li><h3>main axis</h3> - <span style="font-size: 20px">Đây là trục mà các item sẽ hiển thị khi nằm trong container. 
+            Nó không nhất thiết phải theo chiều ngang như trên hình vẽ (đấy chỉ là 
+            mình lấy ví dụ thế), chúng ta có thể thay đổi được hướng của main-axis.</span> </li>
+        <li><h3>main-start | main-end</h3> <span style="font-size: 20px"> - Đây là 2 điểm bắt đầu và kết thúc của trục main.</span></li>
+        <li><h3>main size</h3> <span style="font-size: 21px"> Bạn có thể hiểu đơn giản là kích thước (chiều rộng hoặc dọc)
+            của mỗi item dựa theo trục main axis.</span></li>
+        <li><h3>cross axis</h3> <span style="font-size: 20px">- Đây là chiều vuông góc với trục main, direction của nó phụ 
+            thuộc hoàn toàn vào việc bạn cài đặt direction của trục main như thế nào.</span></li>
+        <li><h3>cross-start | cross-end</h3> <span style="font-size: 20px">- Đây là 2 điểm bắt đầu và kết thúc của trục cross.</span></li>
+        <li><h3>cross size</h3> <span style="font-size: 21px">- Kích thước (chiều rộng hoặc dọc) của mỗi item dựa theo trục cross.</span></li>
+    </ul>
+    <h2>II, Các thuộc tính dành cho flex container</h2>
+    <h3>1, display</h3>
+    <span style="font size: 20px">Đây đơn giản là thuộc tính display trong CSS thôi. Cũng như Block, Inline hay Inline-block,
+        ta tạo ra một flex container bằng cách thiết lập cho 1 element thuộc tính này có giá trị như sau:
+       </span>
+    //khong biet code cai hinnh
+    
+    <h3>2, flex-direction</h3>
+    <img src="./anh 22.webp" height="400" width="800" alt="sai roi anh xinh loi em di">
+    <br><br>
+    <span style="font-size: 20px">Đây chính là thuộc tính sẽ giúp điều chỉnh hướng của main-axis (cũng chính là hướng mà các 
+        item sẽ hiển thị). Flexbox là một single-direction layout concept, vậy nên các item sẽ chỉ
+        được hiển thị theo 1 trong 2 kiểu đó là ngang hoặc dọc.</span>
+    
+    
+    <ul> <span style="font-size: 20px">
+        <li>row (kiểu mặc định): Các item được sắp xếp theo chiều ngang, từ trái sang phải.</li>
+        <li>row-reverse : Các item được sắp xếp theo chiều ngang, từ phải sang trái.</li>
+        <li>column : Các item được sắp xếp theo chiều dọc, từ trên xuống dưới.</li>
+        <li>column-reverse : Các item được sắp xếp theo chiều dọc, từ dưới lên trên.</li></span>
+        
+    </ul>
+    <h3>3, flex-wrap</h3>
+    <img src="./anh 6.webp" height="300" width="">
+    <br>
+    <h3>4, justify-content</h3>
+    <img src="./anh 3.png" height="800" width="500"> <br><br>
+    <span style="font-size: 20px"> Đây chính là cách mà các item sắp xếp cách hiển thị trong container.</span>
+    <br><br>
+     // khong biet code cai hinh xam
+    
+     <ul>
+        <span style="font-size: 20px">
+            <li>flex-start (default): Các item được "căn lề trái"</li>
+            <li>flex-end: Các item được "căn lề phải"</li>
+            <li>center: Các item được "căn giữa"</li>
+            <li>space-between: Các item được phân phối khoảng cách ngang 
+                nhau trên dòng. Item đầu tiên được gắn chặt vào main start 
+                và item cuối cùng được gắn chặt vào main end</li>
+            <li>space-around: Tương tự như space-between tuy nhiên item đầu tiên
+                và cuối cùng "cách lề" một khoảng bằng nửa khoảng cách giữa các item</li>
+            <li>space-evenly: Tương tự như space-around tuy nhiên item đầu tiên và cuối cùng
+                "cách lề" một khoảng bằng khoảng cách giữa các item</li></span>
+        
+    </ul>
+    
+    <h3>5, align-items</h3>
+    <img src="./anh 4.webp" height="800" width="500">
+    <br><br>
+    <span style="font-size: 20px">
+    Có thể coi đây là justify-content phiên bản dành cho cross-axis.</span>
+    // khong biet code o xam
+    <ul>
+        <span style="font-size: 20px">
+        <li>stretch (default): Các item sẽ co giãn để "fill" đầy 
+            container (vẫn tuân theo max-width/min-width)</li>
+        <li>flex-start: Có thể coi là "căn lề trên"</li>
+        <li>flex-end: Đây là "căn lề dưới"</li>
+        <li>center: Các item nằm giữa container</li>
+        <li>baseline: Các item được sắp xếp theo baseline của chúng.</li></span>
+    </ul>
+    
+    <h3>6, align-content</h3>
+    
+    <img src="./anh 5.png" height="800" width="500" alt="cuu em di huhu">
+    <br><br>
+    <span style="font-size: 20px">
+    Nếu như align-items là justify-content phiên bản cross-axis dành cho các 
+    item nằm trên 1 dòng, thì align-content là phiên bản dành cho các dòng.</span>
+    
+    //khong biet code bang xam git remote add origin https://github.com/tuatualearncode/iamhere
+    
+    
+    <ul>
+        <span style="font-size: 20px">
+        <li>flex-start: Các dòng được "căn lề trên"</li>
+        <li>flex-end: Các dòng được "căn lề dưới"</li>
+        <li>center: Các dòng được "căn giữa"</li>
+        <li>space-between: Tương tự phần justify-content nhưng theo trục cross</li>
+        <li>space-around: Như trên</li>
+        <li>stretch (default): Các dòng được kéo giãn để fill đầy các khoảng trống</li></span>
+    </ul>
+    
+    <h2>III, Tạm kết</h2>
+    <span style="font-size: 20px">Trong bài này ta đã đi qua được các thuộc tính cần thiết dành 
+    cho flex container, bài sau chúng ta sẽ cùng tìm hiểu về các thuộc tính dành cho flex item nhé !
+    </span

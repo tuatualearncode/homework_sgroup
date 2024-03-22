@@ -1,0 +1,320 @@
+* {
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 1px;
+}
+p{
+    font-family: 'Inter Tight', sans-serif;
+}
+li{
+    font-family: 'Inter Tight', sans-serif;
+}
+
+#body{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
+#header{ 
+    box-sizing: border-box;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top:0;
+    background-color: white;
+   
+}
+#header-content{
+    width: 800px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+}
+#logo {
+    background-color: black;
+    height: 40px;
+    width: 40px;
+    border-radius: 12%;
+    display:flex;
+    align-items: center; /* căn giữa theo chiều dọc */
+    justify-content: center; /* căn giữa theo chiều ngang */
+ }
+#logo-content{ /* chu J */
+    color:white;
+    font-size: 23px;   
+
+    }
+.jason{   /* chu Jason */
+    font-size: 20px;
+    margin-left: 15px;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+#hinhtron{ /* ô chứa các hình tròn */
+    height: 50px;
+    width: 200px;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.button-header{
+    height :30px;
+    width: 30px;
+    background-color:#F26464;
+    border-radius: 50%;
+    color : white;
+    border-color:transparent;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+}
+.button-header:hover{
+    background-color: black;
+}
+
+
+
+
+#avatar{  /* div của ảnh và nội dung cạnh ảnh*/
+    margin-top: 150px;
+    margin-bottom: 35px;
+    box-sizing: border-box;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex; }
+.hithere{
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+   
+#content-avt-1{
+    margin-left: 70px;
+}
+.tieude{
+    font-size : 40px;
+}
+#content-avt-2{
+    display: flex;
+    justify-content:space-between;
+}
+
+
+.bb2 {
+    color: #F26464;
+    font-size:35px;
+   
+}
+
+
+#aboutme{ /*about me*/
+    font-size: 15px;
+    color: black;
+    font-weight: bolder;
+    text-decoration: underline;
+    text-underline-position : under;
+    text-decoration-color: red;}
+
+#button-down{
+    margin-top: 50px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+#down { /* dowload resume*/
+    color: #F26464;
+    !important;
+    font-weight : bold;
+    font-size : 12px; /*color của chữ */
+    border: 2px solid #F26464; /* viền nét liền màu đỏ */
+    padding: 10px 15px; /*nội dung bên trong */
+    border-radius: 20px; /* làm cong viền */
+    background: transparent; /* nền button : trong suốt */
+}
+#down:hover{
+    background-color: #F26464;
+    color: white;}
+
+#c{
+    width: 800px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+#c1{
+    width: 400px;
+}
+#c2{
+    width: 400px;
+}
+
+.c1{
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: red;
+    color: black;
+    font-weight: bolder;
+    margin-bottom: 10px;
+
+}
+
+.button-coreskills{
+    border-radius: 20px;
+    border : 1px solid #6c757d;
+    padding : 7px 10px;
+    margin-left: 7px;
+    margin-top: 7px;
+    background-color: transparent;
+    font-size: 15px;
+}
+
+
+
+#d{ 
+    margin-top: 50px;
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: red;
+    margin-bottom: 50px;
+   
+ 
+}
+#work-ex-below{
+    display: flex;
+    justify-content: space-between;
+
+}
+#d1{
+    width: 390px;}
+#d2{
+    width: 390px;
+}
+.d21{
+    font-size: 14px;
+    font-weight: bolder;
+    line-height: 1.5;
+}
+.d22{
+    font-size: 22px;
+    font-family: 'Inter Tight', sans-serif;
+    line-height: 1.5;
+
+}
+.d23{
+    font-size: 16px;
+    
+}
+p{
+    font-size: 18px;
+}
+
+#f1{
+    width: 350px;
+    margin-left: 2px;
+}
+
+#lastest{
+    margin-top: 50px;
+    color: black;
+    font-weight: bold;
+    text-decoration: underline #F26464;
+    text-underline-position:under;
+    
+}
+#detail{
+   border : 2px solid #F26464;
+   border-radius: 20px;
+   width: 80px;
+   height: 30px;
+   background-color:azure;
+   font-size: 10px;
+   color: #F26464;
+   font-weight: bold;
+}
+#detail:hover{
+    background-color: #F26464;
+    color: white;
+}
+
+#body-final{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#f{ 
+    box-sizing: border-box;
+    padding: 50px;
+    margin-top: 50px;
+    background-color:azure;
+    margin-bottom: 50px;
+    display: flex;
+    height: 400px;
+    width: 800px;
+}
+.f11{
+    padding-top: 30px;
+    font-size: 17px;
+    font-weight: bold;
+}
+#cry{
+    width: 800px;
+
+}
+#ready{
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cha-stay{
+    display: flex;
+    justify-content: center;
+    margin-top: 17px;
+}
+#stay {
+    font-size: 20px;
+    color :darkgrey;
+    font-weight: bold;
+}
+#re{
+    font-size: 50px;
+    color:white;
+    font-weight: bold;
+}
+#feel{
+    color: white;
+}
+#lets{
+    margin-top: 15px;
+    border : 2.5px solid #F26464;
+    background-color: black;
+    color: #F26464;
+    font-weight: bold;
+    border-radius: 30px;
+    width: 150px;
+    height: 50px;
+}
+#lets:hover{
+    background-color: #F26464;
+    color: white;
+}
+#last{
+    display: flex;
+    justify-content: center;
+}
+.last{
+    margin-top: 60px;
+    font-size: 20px;
+    color :darkgrey;
+}
