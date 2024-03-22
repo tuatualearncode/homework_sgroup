@@ -1,0 +1,40 @@
+/* #addContact{
+    background-color:chartreuse;
+    border: 1px solid black;
+    height: 30%;
+    width: 10%;
+} */
+
+.modal {
+    /* display: none; */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(22,2,2,0.2)
+  }
+  
+  .modal-content {
+    background-color:aquamarine;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1.5px solid #888;
+    width: 40%;
+  }
+  
+  .close {
+    color:black;
+    float: right;
+    font-size: 28px;
+    font-weight: bolder;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+  }
